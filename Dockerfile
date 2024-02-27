@@ -12,6 +12,6 @@ WORKDIR /app
 
 COPY --from=builder /home/gradle/src/build/libs /app
 
-EXPOSE 8081
+EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "/app/test-containers-0.0.1-SNAPSHOT.jar"]
